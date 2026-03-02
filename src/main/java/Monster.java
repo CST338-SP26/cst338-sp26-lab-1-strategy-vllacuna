@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public abstract class Monster {
+
     private Integer hp;
     private Integer xp = 10;
     private Integer maxHP;
