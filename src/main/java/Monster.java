@@ -4,11 +4,10 @@ import java.util.Objects;
 public abstract class Monster {
 
     private Integer hp;
-    private Integer xp = 10; // default value is 10
+    private Integer xp = 10;
     private Integer maxHP;
     private HashMap<String, Integer> items;
 
-    // Must be written by hand (per the assignment)
     public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
         this.maxHP = maxHP;
         hp = this.maxHP;
@@ -56,7 +55,6 @@ public abstract class Monster {
         return Objects.hash(hp, xp, maxHP, items);
     }
 
-    // Must be written by hand (per the assignment)
     @Override
     public String toString() {
         return "hp=" + hp + "/" + maxHP;
